@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aligned.activity.MainActivity">
+
+    <item
+        android:id="@+id/action_chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_msg_notification"
+        app:showAsAction="always" />
+
+
+</menu>

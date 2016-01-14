@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="350dp">
+
+        <com.andtinder.view.CardContainer
+            android:id="@+id/layoutview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OR"
+            android:padding="16dp"
+            android:background="@drawable/or_textview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/no_img"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@drawable/ic_delete"
+                android:textColor="#e25a52"
+                android:drawableLeft="@drawable/ic_cross"
+                android:gravity="center"
+                android:background="@drawable/questions_action"/>
+
+
+
+
+            <ImageView
+                android:id="@+id/yes_img"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#22c064"
+                android:padding="25dp"
+              android:src="@drawable/ic_heart"
+                android:gravity="center"
+                android:background="@drawable/questions_action"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

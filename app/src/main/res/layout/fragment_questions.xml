@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerQuestions"
+            android:background="@drawable/grey_background_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer">
+        </android.support.v4.view.ViewPager>
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Should Tony Abott Step Down as the leader of liberal party ??"
+            />-->
+
+
+        <LinearLayout
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_background"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:drawableRight="@drawable/ic_info"
+                android:textSize="18sp"
+                android:text="Answer question to Begin"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OR"
+            android:padding="16dp"
+            android:background="@drawable/or_textview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/no_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:padding="25dp"
+                android:textSize="30dp"
+                android:textColor="#e25a52"
+                android:gravity="center"
+                android:background="@drawable/questions_action"/>
+
+
+
+
+            <TextView
+                android:id="@+id/yes_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#22c064"
+                android:padding="25dp"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="Yes"
+                android:background="@drawable/questions_action"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

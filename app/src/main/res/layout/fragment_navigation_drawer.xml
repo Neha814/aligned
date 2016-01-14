@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" >
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_logo"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#AA000000"
+                />
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Smith"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/heading_text_size" />
+
+
+            <TextView
+                android:id="@+id/edit_profile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:drawableLeft="@drawable/ic_edit"
+                android:text="Edit Profile" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:layout_above="@+id/footer"
+        android:background="@color/menu_color"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#28304f"
+
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Rate our app"
+            android:textColor="#fdbb1d"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_below="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_centerInParent="true"
+            android:text="We'll be your friend forever"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="14dp"
+            android:textSize="@dimen/text_size" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rate"
+        android:layout_marginTop="-20dp"
+        android:layout_alignTop="@+id/footer"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+</RelativeLayout>
